@@ -325,7 +325,7 @@ recipes/bioconductor-gostats
 recipes/bioconductor-gosemsim
 recipes/bioconductor-topgo
 recipes/bioconductor-xvector
-recipes/bioconductor-biostrings
+#recipes/bioconductor-biostrings
 recipes/bioconductor-ggtree
 recipes/bioconductor-keggrest
 recipes/bioconductor-gage
@@ -439,7 +439,7 @@ recipes/bioconductor-genomation
 recipes/bioconductor-cexor
 recipes/r-gsalib
 recipes/bioconductor-shortread
-recipes/bioconductor-dada2
+#recipes/bioconductor-dada2
 recipes/bioconductor-systempiper
 
 # TODO: r-phonr seems to loop indefinitely when trying to build.
