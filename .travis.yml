@@ -16,3 +16,7 @@ env:
   matrix:
   - SUBDAG=0
   - SUBDAG=1
+branches:
+  only:
+  - master
+  - dada2osx
