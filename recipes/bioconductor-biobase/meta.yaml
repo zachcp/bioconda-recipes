@@ -6,13 +6,13 @@ source:
   url: https://bioarchive.galaxyproject.org/Biobase_2.32.0.tar.gz
   md5: acc8c6a85fefcdfd14261c3e3b173e21
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
 requirements:
   build:
-    - 'bioconductor-biocgenerics >=0.3.2'
+    - 'bioconductor-biocgenerics >=0.18.0'
     - r
   run:
     - 'bioconductor-biocgenerics >=0.3.2'
