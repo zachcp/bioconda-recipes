@@ -11,8 +11,8 @@ build:
     - lib/
 requirements:
   build:
-    - 'bioconductor-biostrings >=2.32.1'
-    - 'bioconductor-shortread >=1.24.0'
+    - 'bioconductor-biostrings >=2.40.0'
+    - 'bioconductor-shortread >=1.30.0'
     - r
     - 'r-data.table >=1.9.4'
     - 'r-ggplot2 >=1.0'
@@ -22,8 +22,8 @@ requirements:
     - gcc  # [linux]
     - llvm  # [osx]
   run:
-    - 'bioconductor-biostrings >=2.32.1'
-    - 'bioconductor-shortread >=1.24.0'
+    - 'bioconductor-biostrings >=2.40.0'
+    - 'bioconductor-shortread >=1.30.0'
     - r
     - 'r-data.table >=1.9.4'
     - 'r-ggplot2 >=1.0'
