@@ -367,8 +367,8 @@ recipes/r-readr
 # TODO: bioconductor-cexor needs specific version of genomicranges?
 recipes/bioconductor-cexor
 recipes/r-gsalib
-recipes/bioconductor-shortread
-recipes/bioconductor-dada2
+#recipes/bioconductor-shortread
+#recipes/bioconductor-dada2
 recipes/bioconductor-systempiper
 
 # TODO: r-phonr seems to loop indefinitely when trying to build.
