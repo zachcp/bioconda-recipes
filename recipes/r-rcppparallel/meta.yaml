@@ -30,7 +30,7 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
-  skip: True  # [osx]
+#  skip: True  # [osx]
 # Suggests: Rcpp, RUnit, knitr, rmarkdown
 requirements:
   build:
@@ -38,7 +38,8 @@ requirements:
     - r-bh >=1.60.0_1
     - posix               # [win]
     - {{native}}toolchain # [win]
-    - gcc                 # [not win]
+    - gcc                 # [not osx]
+    - llvm                # [osx]
 
   run:
     - r-base
