@@ -1,13 +1,13 @@
 #!/bin/bash
  
 
-mkdir -p $PREFIX
+mkdir -p $PREFIX/bin
 
-if [ `uname` == Darwin ]; then
-    export MACOSX_DEPLOYMENT_TARGET=10.9
-    $PYTHON build_scripts/indigo-release-libs.py --preset=mac10.9
-    $PYTHON build_scripts/indigo-release-libs.py --preset=mac10.9
+if [ "$(uname)" == "Darwin" ]; then
+  export MACOSX_DEPLOYMENT_TARGET=10.9
+  python build_scripts/indigo-release-libs.py --preset=mac10.9
+  python build_scripts/indigo-release-libs.py --preset=mac10.9
 else
-  $PYTHON build_scripts/indigo-release-libs.py --preset=linux64
-  $PYTHON build_scripts/indigo-release-utils.py --preset=linux64
+  python build_scripts/indigo-release-libs.py --preset=linux64
+  python build_scripts/indigo-release-utils.py --preset=linux64
 fi
