@@ -6,6 +6,7 @@ source:
   fn: indigo-1.3.0beta
   url: https://github.com/epam/Indigo/archive/indigo-1.3.0beta.tar.gz
   md5: 37e79dd0aa7b582e3ed862ac730cd5b5
+  path: .
 
 
 build:
