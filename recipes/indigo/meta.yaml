@@ -1,12 +1,15 @@
+{% set name = "indigo" %}
+{% set version = "1.3.0beta" %}
+
 package:
-  name: indigo
-  version: 1.3.0beta
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  fn: indigo-1.3.0beta
-  url: https://github.com/epam/Indigo/archive/indigo-1.3.0beta.tar.gz
+  fn: {{ name | lower }}-{{ version }}.tar.gz
+  url: https://github.com/epam/Indigo/archive/{{name | lower }}-{{ version }}.tar.gz
   md5: 37e79dd0aa7b582e3ed862ac730cd5b5
-  path: .
+
 
 
 build:
