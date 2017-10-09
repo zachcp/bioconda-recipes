@@ -21,8 +21,15 @@ requirements:
     - gcc   # [not osx]
     - llvm  # [osx]
     - cmake
+    - freetype
+    - zlib
+    - cairo
+    - libpng
   run:
     - libgcc    # [not osx]
+    - zlib
+    - cairo
+    - libpng
 
 test:
   commands:
