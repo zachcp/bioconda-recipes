@@ -25,8 +25,11 @@ requirements:
     - zlib
     - cairo
     - libpng
+    - pixman
+    - icu
   run:
     - libgcc    # [not osx]
+    - pixman
     - zlib
     - cairo
     - libpng
