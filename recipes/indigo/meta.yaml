@@ -20,6 +20,7 @@ requirements:
     - python
     - gcc   # [not osx]
     - llvm  # [osx]
+    - cmake
   run:
     - libgcc    # [not osx]
 
