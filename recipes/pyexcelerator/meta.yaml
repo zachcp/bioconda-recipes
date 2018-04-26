@@ -8,8 +8,7 @@ source:
   md5: 478c79a74be39d27eee9bd1b3032dffe
 
 build:
-  skip: True  # [not py27]
-
+  number: 1
 
 requirements:
   build:
