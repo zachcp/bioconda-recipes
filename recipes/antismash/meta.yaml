@@ -21,7 +21,6 @@ requirements:
     - biopython >=1.71
     - helperlibs
     - jinja2
-    - pysvg-py3
     - argparse
     - bcbiogff
     - networkx
@@ -56,7 +55,6 @@ requirements:
     - pandas
     - prodigal
     - pyquery ==1.2.9
-    - pysvg-py3
     - scipy
     - scikit-learn
     - xz
