@@ -10,7 +10,7 @@ build:
   number: 1
 
 source:
-  path: ../antismash
+  path: /Users/zach/Projects/Software/antismash
 
 requirements:
   build:
@@ -41,8 +41,6 @@ requirements:
     - networkx
     - numpy
     - pandas
-    - perl-bioperl
-    - perl-pathtools
     - prodigal
     - pyquery ==1.2.9
     - pysvg
