@@ -1,21 +1,16 @@
 {% set name = "Antismash" %}
-{% set version = "4.1.0" %}
+{% set version = "5.0.alpha" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 build:
-  skip: True # [not py27]
+  skip: True # [not py36]
   number: 1
 
 source:
-  fn: {{ name|lower }}-{{ version }}.tar.gz
-  url: https://dl.secondarymetabolites.org/releases/{{ version }}/{{ name|lower  }}-{{ version }}.tar.gz
-  sha256: bf2db777fdaa269728b911ebd31c4d9726039058b59fe578c09148dd7ad3cb1c
-  patches:
-      - smiles.patch [osx]
-      - manifest.patch
+  path: ../antismash
 
 requirements:
   build:
@@ -24,7 +19,6 @@ requirements:
   run:
     - python
     - argparse
-    - backports.lzma
     - bcbiogff
     - biopython >=1.65
     - blast ==2.2.31
@@ -50,12 +44,11 @@ requirements:
     - perl-bioperl
     - perl-pathtools
     - prodigal
-    - pyexcelerator
     - pyquery ==1.2.9
     - pysvg
     - scipy
     - scikit-learn ==0.18.2
-    - xz ==5.2.2
+    - xz
 
 
 test:
