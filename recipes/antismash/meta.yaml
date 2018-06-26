@@ -1,5 +1,5 @@
 {% set name = "Antismash" %}
-{% set version = "5.0.alpha" %}
+{% set version = "5.0.0alpha" %}
 
 package:
   name: {{ name|lower }}
@@ -7,54 +7,54 @@ package:
 
 build:
   skip: True # [not py36]
-  number: 1
+  number: 0
 
 source:
   path: /Users/zach/Projects/Software/antismash
 
 requirements:
   build:
-    - python
-    - scikit-learn
-    - cssselect
-    - numpy
-    - biopython >=1.71
-    - helperlibs
-    - jinja2
     - argparse
     - bcbiogff
-    - networkx
-    - pandas
+    - biopython >=1.71
+    - cssselect
+    - helperlibs
+    - jinja2
     - matplotlib
+    - networkx
+    - numpy
+    - pandas
+    - pysvg-py3
     - scipy
+    - scikit-learn
 
   run:
     - python
     - argparse
     - bcbiogff
-    - biopython >=1.71
-    - blast ==2.2.31
+    - biopython
+    - blast
     - clustalw
     - cssselect
-    - diamond ==0.8.36
-    - ete2
-    - fasttree ==2.1.9
-    - glimmer ==3.02
-    - glimmerhmm ==3.0.4
+    - diamond
+    - ete2  
+    - fasttree
+    - glimmer
+    - glimmerhmm
     - helperlibs
     - hmmer
     - hmmer2
     - openjdk
-    - libxml2 ==2.9.4
+    - libxml2
     - mafft
     - matplotlib
-    - meme ==4.11.2
+    - meme
     - muscle
     - networkx
     - numpy
     - pandas
     - prodigal
-    - pyquery ==1.2.9
+    - pyquery
     - scipy
     - scikit-learn
     - xz
