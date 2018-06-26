@@ -1,5 +1,5 @@
 {% set name = "Antismash" %}
-{% set version = "5.0.0alpha" %}
+{% set version = "5.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -10,7 +10,7 @@ build:
   number: 0
 
 source:
-  path: /Users/zach/Projects/Software/antismash
+  path: /Users/zach/Projects/Software/antismash/dist/antismash-5.0.0.tar.gz
 
 requirements:
   build:
@@ -55,6 +55,7 @@ requirements:
     - pandas
     - prodigal
     - pyquery
+    - setuptools
     - scipy
     - scikit-learn
     - xz
