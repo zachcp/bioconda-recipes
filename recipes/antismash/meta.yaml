@@ -8,6 +8,8 @@ package:
 build:
   skip: True # [not py36]
   number: 0
+  entry_points:
+    - antismash=run_antismash:main
 
 source:
   git_url: https://github.com/zachcp/antismash.git
