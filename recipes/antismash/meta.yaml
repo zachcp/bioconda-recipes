@@ -26,6 +26,7 @@ requirements:
     - numpy
     - pandas
     - pysvg-py3
+    - python
     - scipy
     - scikit-learn
     - setuptools
