@@ -1,5 +1,5 @@
 {% set name = "Antismash" %}
-{% set version = "5.0.0" %}
+{% set version = "5.0.0alpha" %}
 
 package:
   name: {{ name|lower }}
@@ -10,7 +10,8 @@ build:
   number: 0
 
 source:
-  path: /Users/zach/Projects/Software/antismash/dist/antismash-5.0.0.tar.gz
+  git_url: https://github.com/zachcp/antismash.git
+  git_tag: removepyexcellerator
 
 requirements:
   build:
@@ -27,6 +28,7 @@ requirements:
     - pysvg-py3
     - scipy
     - scikit-learn
+    - setuptools
 
   run:
     - python
