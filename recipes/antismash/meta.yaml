@@ -40,7 +40,6 @@ requirements:
     - clustalw
     - cssselect
     - diamond
-    - ete2  
     - fasttree
     - glimmer
     - glimmerhmm
