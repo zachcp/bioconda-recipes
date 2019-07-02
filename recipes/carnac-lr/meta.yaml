@@ -1,0 +1,29 @@
+{% set name = "carnac-lr" %}
+{% set version = "93dd640f6257752cccc7b0f5b89e3b6132cbe9a6" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  git_url: https://github.com/kamimrcht/CARNAC-LR.git
+  git_tag: 93dd640f6257752cccc7b0f5b89e3b6132cbe9a6
+build:
+  number: 0
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cc') }}
+  run:
+    - libc
+
+test:
+  commands:
+    - carnac-lr
+
+about:
+  home: https://sourceforge.net/projects/probmask/
+  license: Apache License 2.0
+  license_family: Apache
+  summary: "ZORRO is a probabilistic masking program that assigns confidence scores to each column in a multiple sequence alignment."
