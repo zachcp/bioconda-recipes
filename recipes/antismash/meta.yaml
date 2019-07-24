@@ -29,7 +29,7 @@ requirements:
     - clustalw
     - cssselect
     - diamond
-    - ete2
+    - ete3
     - fasttree
     - glimmer
     - glimmerhmm
@@ -41,7 +41,7 @@ requirements:
     - meme
     - muscle
     - networkx
-    - numpy
+    - numpy >=1.14
     - pandas
     - perl
     - perl-bioperl  
